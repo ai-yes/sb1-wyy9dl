@@ -1,0 +1,28 @@
+alchemy_shop:
+  id: alchemy_shop
+  name: 丹药阁
+  description: 出售各类丹药和炼丹材料
+  category: alchemy
+  items:
+    - id: minor_healing_pill
+      price: 100
+      stock: -1
+    - id: spirit_recovery_pill
+      price: 200
+      stock: -1
+    - id: strength_pill
+      price: 500
+      stock: 5
+
+herb_shop:
+  id: herb_shop
+  name: 百草园
+  description: 出售各种炼丹所需的灵药
+  category: alchemy
+  items:
+    - id: spirit_herb
+      price: 50
+      stock: -1
+    - id: rare_herb
+      price: 200
+      stock: 10

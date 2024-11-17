@@ -1,0 +1,25 @@
+jade_shop:
+  id: jade_shop
+  name: 玉简阁
+  description: 出售各类功法玉简
+  category: artifacts
+  items:
+    - id: basic_cultivation_jade
+      price: 1000
+      stock: 5
+    - id: sword_art_jade
+      price: 2000
+      stock: 3
+
+talisman_shop:
+  id: talisman_shop
+  name: 符箓阁
+  description: 出售各类符箓和法宝
+  category: artifacts
+  items:
+    - id: basic_talisman
+      price: 100
+      stock: -1
+    - id: protection_talisman
+      price: 300
+      stock: 10

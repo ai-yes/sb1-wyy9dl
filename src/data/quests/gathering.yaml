@@ -1,0 +1,35 @@
+collect_herbs:
+  id: collect_herbs
+  title: 珍稀灵药
+  description: 为药王收集珍稀灵药
+  category: gathering
+  status: available
+  requirements:
+    - type: gather
+      target: rare_herb
+      amount: 3
+      current: 0
+  rewards:
+    exp: 150
+    gold: 100
+    items:
+      - id: spirit_recovery_pill
+        amount: 2
+
+collect_minerals:
+  id: collect_minerals
+  title: 灵石采集
+  description: 在灵石洞采集灵石
+  category: gathering
+  status: available
+  requirements:
+    - type: gather
+      target: spirit_stone
+      amount: 5
+      current: 0
+  rewards:
+    exp: 120
+    gold: 80
+    items:
+      - id: minor_spirit_stone
+        amount: 3

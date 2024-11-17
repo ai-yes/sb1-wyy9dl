@@ -1,0 +1,49 @@
+name: 幻月林
+description: 常年被月光笼罩的神秘森林，适合筑基期修士历练
+width: 15
+height: 15
+requiredLevel: 15
+requiredRealm: 筑基期
+
+tiles:
+  - x: 7
+    y: 7
+    type: forest
+    name: 月华池
+    description: 月光精华汇聚之地，可以吸收月华之力增强修为
+    canMove: true
+    effects:
+      type: cultivation
+      bonus:
+        spirit: 1.5
+        mp: 1.3
+
+  - x: 8
+    y: 7
+    type: cave
+    name: 月影洞
+    description: 洞中生长着珍稀的月影草，但也有强大的妖兽守护
+    canMove: true
+    resourceGroups:
+      - moon_herbs
+    monsterGroups:
+      - moon_beasts
+
+  - x: 7
+    y: 8
+    type: dungeon
+    name: 月隐秘境
+    description: 传说中月神留下的秘境，据说藏有绝世功法
+    canMove: true
+    requiredItems:
+      - moon_key
+    monsterGroups:
+      - moon_guardians
+
+defaultTile:
+  type: forest
+  name: 幻月密林
+  description: 被月光笼罩的密林，时常有妖兽出没
+  canMove: true
+  monsterGroups:
+    - forest_beasts

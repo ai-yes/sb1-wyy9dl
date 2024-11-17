@@ -1,0 +1,35 @@
+defeat_wolves:
+  id: defeat_wolves
+  title: 狼群威胁
+  description: 清除灵兽山附近的狼群
+  category: combat
+  status: available
+  requirements:
+    - type: kill
+      target: wolf
+      amount: 5
+      current: 0
+  rewards:
+    exp: 200
+    gold: 150
+    items:
+      - id: wolf_fang
+        amount: 2
+
+defeat_spiders:
+  id: defeat_spiders
+  title: 蛛网清理
+  description: 清理洞穴中的蜘蛛巢穴
+  category: combat
+  status: available
+  requirements:
+    - type: kill
+      target: cave_spider
+      amount: 4
+      current: 0
+  rewards:
+    exp: 180
+    gold: 120
+    items:
+      - id: spider_silk
+        amount: 3

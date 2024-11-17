@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F5F5F5] text-black font-mono text-sm leading-relaxed;
+  }
+}
+
+@layer components {
+  .game-container {
+    @apply max-w-[600px] mx-auto p-2.5;
+  }
+
+  .game-section {
+    @apply border border-black m-1 p-2 bg-white;
+  }
+
+  .game-header {
+    @apply text-center p-1 border-b-2 border-black bg-[#E6E6E6];
+  }
+
+  .game-title {
+    @apply text-base font-bold my-1;
+  }
+
+  .server-info {
+    @apply text-xs text-gray-600;
+  }
+
+  .progress-bar {
+    @apply bg-[#EEE] border border-black h-3 mt-0.5;
+  }
+
+  .progress-fill {
+    @apply bg-[#4CAF50] h-full transition-all duration-200;
+  }
+
+  .divider {
+    @apply border-t border-dashed border-gray-600 my-1;
+  }
+
+  .direction-grid {
+    @apply grid grid-cols-3 gap-1 my-2.5 text-center;
+  }
+
+  .direction-btn {
+    @apply p-2 border border-black bg-white cursor-pointer hover:bg-gray-100 active:bg-gray-200 
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white
+           transition-colors duration-200;
+  }
+
+  .direction-btn:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .direction-btn:not(:disabled):hover {
+    @apply bg-gray-100;
+  }
+
+  .direction-btn:not(:disabled):active {
+    @apply bg-gray-200 transform scale-95;
+  }
+
+  .npc-list {
+    @apply list-none;
+  }
+
+  .npc-item {
+    @apply py-0.5 text-blue-600 cursor-pointer hover:underline;
+  }
+
+  .menu-grid {
+    @apply grid grid-cols-2 gap-1;
+  }
+
+  .menu-btn {
+    @apply p-2 border border-black text-center bg-white hover:bg-gray-100;
+  }
+
+  .system-message {
+    @apply text-gray-600 italic;
+  }
+
+  .chat-message {
+    @apply my-0.5;
+  }
+
+  .nav-bar {
+    @apply flex justify-between mt-2.5 pt-1 border-t border-black;
+  }
+
+  .nav-link {
+    @apply text-blue-600 no-underline hover:underline;
+  }
+
+  .game-footer {
+    @apply text-center text-xs text-gray-600 mt-2.5;
+  }
+
+  .combat-log {
+    @apply h-20 overflow-y-auto p-1 bg-white border border-black;
+  }
+
+  .quick-menu {
+    @apply flex justify-between my-1;
+  }
+
+  .stats-table {
+    @apply w-full border-collapse;
+  }
+
+  .stats-table td {
+    @apply p-0.5 border border-gray-300;
+  }
+
+  .char-stats {
+    @apply grid grid-cols-2 gap-1;
+  }
+
+  /* 地图对话框样式 */
+  .map-dialog {
+    @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50;
+  }
+
+  .map-dialog-content {
+    @apply bg-slate-800 border border-slate-700 rounded-lg w-[90%] max-w-2xl p-4;
+  }
+
+  .map-grid {
+    @apply grid gap-0.5;
+  }
+
+  .map-tile {
+    @apply w-8 h-8 rounded flex items-center justify-center text-sm relative;
+  }
+
+  .map-tile-tooltip {
+    @apply absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 
+           bg-black/90 rounded text-xs text-white opacity-0 
+           group-hover:opacity-100 pointer-events-none transition-opacity;
+  }
+}

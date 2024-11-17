@@ -1,0 +1,83 @@
+# 地图基本信息
+name: 青云镇区域
+description: 青云镇周边区域，适合新手修士历练
+width: 20
+height: 20
+
+# 默认地块属性
+defaultTile:
+  type: plain
+  name: 灵田
+  description: 经过开垦的灵田，种植着一些常见的灵药
+  canMove: true
+  resourceGroups: 
+    - common_herbs
+  monsterGroups:
+    - spirit_beasts_weak
+
+# 特殊地块定义
+tiles:
+  - x: 10
+    y: 10
+    type: city
+    name: 青云镇
+    description: 这里是修仙界的新手村，到处都是初出茅庐的修士
+    canMove: true
+    npcIds:
+      - elder_li
+      - merchant_wang
+    shopIds:
+      - elder_shop
+      - general_store
+
+  - x: 10
+    y: 11
+    type: city
+    name: 练功房
+    description: 这里是修士们修炼的场所，灵气浓郁
+    canMove: true
+    npcIds:
+      - training_master
+    cultivationBonus: 1.2
+
+  - x: 11
+    y: 10
+    type: mountain
+    name: 灵兽山
+    description: 这里栖息着各种灵兽，是收服灵宠的好去处
+    canMove: true
+    monsterGroups:
+      - spirit_beasts_weak
+      - forest_beasts
+
+  - x: 9
+    y: 10
+    type: forest
+    name: 药王谷
+    description: 遍布各种灵药的山谷，是采药的好去处
+    canMove: true
+    resourceGroups:
+      - common_herbs
+      - rare_herbs
+    monsterGroups:
+      - forest_beasts
+
+  - x: 10
+    y: 9
+    type: city
+    name: 传送大殿
+    description: 这里有通往其他区域的传送阵
+    canMove: true
+    teleports:
+      - mapId: spirit_valley
+        name: 灵谷
+        cost: 500
+        requiredLevel: 10
+      - mapId: mystic_forest
+        name: 幻月林
+        cost: 800
+        requiredLevel: 15
+      - mapId: ancient_ruins
+        name: 远古遗迹
+        cost: 1000
+        requiredLevel: 18

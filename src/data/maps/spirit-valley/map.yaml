@@ -1,0 +1,46 @@
+name: 灵谷
+description: 灵气充沛的山谷，是筑基期修士常来历练的地方
+width: 15
+height: 15
+requiredLevel: 10
+
+tiles:
+  - x: 7
+    y: 7
+    type: dungeon
+    name: 灵谷秘境
+    description: 传说中的秘境入口，据说里面藏有上古修士的传承
+    canMove: true
+    monsterGroups:
+      - spirit_valley_guardians
+
+  - x: 7
+    y: 8
+    type: cave
+    name: 灵石洞
+    description: 蕴含丰富灵石的洞穴，但也有不少妖兽盘踞
+    canMove: true
+    resourceGroups:
+      - spirit_stones
+    monsterGroups:
+      - cave_beasts
+
+  - x: 8
+    y: 7
+    type: lake
+    name: 灵液池
+    description: 池水中蕴含精纯灵气，但需要有特殊法器才能收集
+    canMove: true
+    resourceGroups:
+      - spirit_water
+    requiredItems:
+      - spirit_container
+
+defaultTile:
+  type: forest
+  name: 灵木林
+  description: 古老的灵木林，树木中蕴含着浓郁的灵气
+  canMove: true
+  resourceGroups:
+    - spirit_wood
+    - rare_herbs

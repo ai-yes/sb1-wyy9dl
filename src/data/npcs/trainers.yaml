@@ -1,0 +1,21 @@
+training_master:
+  name: 武长老
+  title: 练功房长老
+  category: trainer
+  dialogue: 要勤加修炼，方能在修仙之路上走得更远。
+  quests:
+    - basic_cultivation
+  skills:
+    - basic_sword_art
+    - spirit_gathering
+
+cultivation_master:
+  name: 玄道子
+  title: 修炼堂首座
+  category: trainer
+  dialogue: 修炼之道，重在积累。切莫好高骛远。
+  quests:
+    - meditation_basics
+  skills:
+    - meditation_technique
+    - qi_control

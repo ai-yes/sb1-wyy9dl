@@ -1,0 +1,27 @@
+minor_healing_pill:
+  name: 小回气丹
+  type: consumable
+  rarity: common
+  description: 服用后可恢复少量生命值
+  stackable: true
+  maxStack: 99
+  usable: true
+  effects:
+    - type: hp
+      value: 50
+      duration: 0
+  sellPrice: 50
+
+spirit_recovery_pill:
+  name: 回灵丹
+  type: consumable
+  rarity: uncommon
+  description: 服用后可恢复法力值
+  stackable: true
+  maxStack: 99
+  usable: true
+  effects:
+    - type: mp
+      value: 30
+      duration: 0
+  sellPrice: 80

@@ -1,0 +1,25 @@
+weapon_shop:
+  id: weapon_shop
+  name: 武器阁
+  description: 专门出售各类法器和武器
+  category: weapons
+  items:
+    - id: basic_sword
+      price: 1000
+      stock: 5
+    - id: spirit_blade
+      price: 3000
+      stock: 3
+
+artifact_shop:
+  id: artifact_shop
+  name: 法器坊
+  description: 出售各种品质的法器
+  category: weapons
+  items:
+    - id: spirit_staff
+      price: 2000
+      stock: 3
+    - id: thunder_sword
+      price: 5000
+      stock: 1

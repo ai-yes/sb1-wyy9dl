@@ -1,0 +1,18 @@
+elder_li:
+  name: 李长老
+  title: 青云镇长老
+  category: quest_giver
+  dialogue: 年轻人，修仙之路漫漫，需得步步为营。这里有一些任务可以帮助你提升修为。
+  quests:
+    - gather_herbs_basic
+    - defeat_foxes
+  shop: elder_shop
+
+spirit_master:
+  name: 灵兽长老
+  title: 灵兽山长老
+  category: quest_giver
+  dialogue: 灵兽山中栖息着诸多灵兽，若能降服它们，便可获得不错的机缘。
+  quests:
+    - tame_spirit_fox
+    - collect_beast_cores

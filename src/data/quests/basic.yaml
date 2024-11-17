@@ -1,0 +1,35 @@
+gather_herbs_basic:
+  id: gather_herbs_basic
+  title: 采集灵药
+  description: 帮助李长老收集一些常见的灵药
+  category: gathering
+  status: available
+  requirements:
+    - type: gather
+      target: common_herb
+      amount: 5
+      current: 0
+  rewards:
+    exp: 100
+    gold: 50
+    items:
+      - id: spirit_stone
+        amount: 1
+
+defeat_foxes:
+  id: defeat_foxes
+  title: 除妖任务
+  description: 消灭在青云镇附近作乱的灵狐
+  category: combat
+  status: available
+  requirements:
+    - type: kill
+      target: spirit_fox
+      amount: 3
+      current: 0
+  rewards:
+    exp: 150
+    gold: 100
+    items:
+      - id: spirit_fox_fur
+        amount: 1

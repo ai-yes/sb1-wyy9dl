@@ -1,0 +1,58 @@
+name: 洞穴野兽组
+description: 栖息在各种洞穴中的强大野兽
+monsters:
+  - id: cave_spider
+    name: 洞穴蜘蛛
+    level: 8
+    hp: 120
+    maxHp: 120
+    attack: 18
+    defense: 12
+    exp: 60
+    gold: 30
+    drops:
+      - itemId: spider_silk
+        name: 蛛丝
+        chance: 0.7
+      - itemId: spider_venom
+        name: 蛛毒
+        chance: 0.4
+    skills:
+      - id: poison_bite
+        name: 毒牙撕咬
+        type: attack
+        mpCost: 10
+        cooldown: 3
+        damage: 1.4
+        effects:
+          - type: hp
+            value: -5
+            duration: 3
+
+  - id: rock_serpent
+    name: 岩蛇
+    level: 10
+    hp: 150
+    maxHp: 150
+    attack: 22
+    defense: 15
+    exp: 75
+    gold: 40
+    drops:
+      - itemId: snake_scale
+        name: 蛇鳞
+        chance: 0.6
+      - itemId: snake_fang
+        name: 蛇牙
+        chance: 0.5
+    skills:
+      - id: constrict
+        name: 缠绕
+        type: attack
+        mpCost: 15
+        cooldown: 4
+        damage: 1.6
+        effects:
+          - type: agility
+            value: -2
+            duration: 2

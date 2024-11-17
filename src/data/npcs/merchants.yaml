@@ -1,0 +1,20 @@
+merchant_wang:
+  name: 王掌柜
+  title: 杂货铺老板
+  category: merchant
+  dialogue: 这里应有尽有，保管让道友满意。
+  shop: general_store
+
+herb_master:
+  name: 药王
+  title: 百草园主人
+  category: merchant
+  dialogue: 老夫在此培育灵药多年，若有需要可以来此采购。
+  shop: herb_shop
+
+jade_keeper:
+  name: 玉简阁主
+  title: 玉简阁管理者
+  category: merchant
+  dialogue: 玉简阁收藏着诸多功法秘籍，只要有足够的贡献点就可以兑换。
+  shop: jade_shop

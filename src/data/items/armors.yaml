@@ -1,0 +1,25 @@
+cloth_robe:
+  name: 布衣
+  type: armor
+  rarity: common
+  description: 普通的修仙者布衣
+  stackable: false
+  level: 1
+  effects:
+    - type: defense
+      value: 3
+  sellPrice: 50
+
+spirit_robe:
+  name: 灵纹道袍
+  type: armor
+  rarity: uncommon
+  description: 刻有灵纹的道袍，可以增强修炼效率
+  stackable: false
+  level: 5
+  effects:
+    - type: defense
+      value: 8
+    - type: spirit
+      value: 2
+  sellPrice: 200

@@ -1,0 +1,25 @@
+basic_sword:
+  name: 练气剑
+  type: weapon
+  rarity: common
+  description: 适合练气期修士使用的基础法剑
+  stackable: false
+  level: 1
+  effects:
+    - type: attack
+      value: 5
+  sellPrice: 100
+
+spirit_blade:
+  name: 灵锋剑
+  type: weapon
+  rarity: uncommon
+  description: 以灵石打造的法剑，具有不错的灵力增幅效果
+  stackable: false
+  level: 5
+  effects:
+    - type: attack
+      value: 12
+    - type: spirit
+      value: 3
+  sellPrice: 300

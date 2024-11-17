@@ -1,0 +1,17 @@
+ancient_scroll:
+  name: 古老卷轴
+  type: quest
+  rarity: uncommon
+  description: 一卷年代久远的卷轴，似乎记载着某种秘密
+  stackable: true
+  maxStack: 1
+  sellPrice: 0
+
+spirit_essence:
+  name: 灵兽精魄
+  type: quest
+  rarity: rare
+  description: 击败灵兽后获得的精魄，蕴含着强大的力量
+  stackable: true
+  maxStack: 99
+  sellPrice: 0

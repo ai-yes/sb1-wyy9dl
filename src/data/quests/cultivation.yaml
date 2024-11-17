@@ -1,0 +1,35 @@
+basic_cultivation:
+  id: basic_cultivation
+  title: 修炼入门
+  description: 在练功房修炼，提升修为
+  category: cultivation
+  status: available
+  requirements:
+    - type: cultivation
+      target: practice
+      amount: 5
+      current: 0
+  rewards:
+    exp: 80
+    gold: 30
+    items:
+      - id: minor_spirit_stone
+        amount: 1
+
+meditation_basics:
+  id: meditation_basics
+  title: 冥想基础
+  description: 学习基础的冥想技巧，提高灵力掌控
+  category: cultivation
+  status: available
+  requirements:
+    - type: meditation
+      target: practice
+      amount: 3
+      current: 0
+  rewards:
+    exp: 100
+    gold: 50
+    items:
+      - id: spirit_recovery_pill
+        amount: 2

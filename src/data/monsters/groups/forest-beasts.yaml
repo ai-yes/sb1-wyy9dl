@@ -1,0 +1,43 @@
+name: 森林野兽组
+description: 栖息在森林中的野兽，适合初级修士历练
+monsters:
+  - id: wild_boar
+    name: 野猪
+    level: 3
+    hp: 80
+    maxHp: 80
+    attack: 12
+    defense: 8
+    exp: 35
+    gold: 15
+    drops:
+      - itemId: boar_meat
+        name: 野猪肉
+        chance: 0.8
+      - itemId: boar_hide
+        name: 野猪皮
+        chance: 0.6
+
+  - id: wolf
+    name: 灰狼
+    level: 5
+    hp: 70
+    maxHp: 70
+    attack: 15
+    defense: 6
+    exp: 45
+    gold: 20
+    drops:
+      - itemId: wolf_fang
+        name: 狼牙
+        chance: 0.6
+      - itemId: wolf_pelt
+        name: 狼皮
+        chance: 0.5
+    skills:
+      - id: wolf_bite
+        name: 狼啮
+        type: attack
+        mpCost: 0
+        cooldown: 2
+        damage: 1.3

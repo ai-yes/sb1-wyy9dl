@@ -1,0 +1,68 @@
+name: 灵谷守卫组
+description: 守护灵谷秘境的强大修士
+monsters:
+  - id: spirit_warrior
+    name: 灵谷战士
+    level: 12
+    hp: 200
+    maxHp: 200
+    attack: 25
+    defense: 20
+    exp: 100
+    gold: 50
+    drops:
+      - itemId: spirit_crystal
+        name: 灵晶
+        chance: 0.6
+      - itemId: warrior_badge
+        name: 战士徽章
+        chance: 0.4
+    skills:
+      - id: spirit_slash
+        name: 灵力斩击
+        type: attack
+        mpCost: 15
+        cooldown: 3
+        damage: 1.5
+      - id: spirit_shield
+        name: 灵力护盾
+        type: defense
+        mpCost: 20
+        cooldown: 5
+        effects:
+          - type: defense
+            value: 10
+            duration: 3
+
+  - id: spirit_mage
+    name: 灵谷法师
+    level: 13
+    hp: 150
+    maxHp: 150
+    attack: 35
+    defense: 15
+    exp: 120
+    gold: 60
+    drops:
+      - itemId: mage_staff
+        name: 法师权杖
+        chance: 0.3
+      - itemId: spirit_essence
+        name: 灵气精华
+        chance: 0.7
+    skills:
+      - id: spirit_bolt
+        name: 灵力弹
+        type: attack
+        mpCost: 25
+        cooldown: 2
+        damage: 1.8
+      - id: spirit_heal
+        name: 灵力治愈
+        type: support
+        mpCost: 30
+        cooldown: 4
+        effects:
+          - type: hp
+            value: 50
+            duration: 0

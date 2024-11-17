@@ -1,0 +1,31 @@
+general_store:
+  id: general_store
+  name: 杂货铺
+  description: 出售日常用品和材料
+  category: general
+  items:
+    - id: spirit_container
+      price: 500
+      stock: 5
+    - id: basic_talisman
+      price: 50
+      stock: -1
+    - id: minor_healing_pill
+      price: 100
+      stock: -1
+    - id: spirit_recovery_pill
+      price: 150
+      stock: -1
+
+elder_shop:
+  id: elder_shop
+  name: 长老商店
+  description: 出售一些基础修炼用品
+  category: general
+  items:
+    - id: minor_spirit_stone
+      price: 100
+      stock: -1
+    - id: healing_pill
+      price: 200
+      stock: 10

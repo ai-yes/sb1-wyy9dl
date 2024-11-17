@@ -1,0 +1,72 @@
+name: 远古遗迹
+description: 一处神秘的远古修士遗迹，蕴含着上古时期的秘密
+width: 15
+height: 15
+requiredLevel: 18
+requiredRealm: 筑基期
+weather: 
+  - clear
+  - foggy
+
+exploration:
+  revealed: false
+  points:
+    - x: 7
+      y: 7
+      type: secret
+      name: 符文石室
+      description: 墙壁上刻满了神秘的符文，似乎记载着某种失传已久的功法
+
+tiles:
+  - x: 7
+    y: 7
+    type: dungeon
+    name: 符文大殿
+    description: 古老的大殿中央矗立着一座巨大的符文石碑，周围能量波动不息
+    canMove: true
+    monsterGroups: 
+      - ancient_guardians
+    resourceGroups:
+      - ancient_relics
+    cultivationBonus: 1.3
+    events:
+      - id: energy_surge
+        name: 能量潮汐
+        description: 每到子时，符文石碑会释放出强大的能量
+        trigger: time
+        condition: hour === 0
+        effects:
+          cultivationSpeed: 2.0
+          damage: 30
+
+  - x: 6
+    y: 7
+    type: cave
+    name: 藏宝密室
+    description: 一个隐秘的密室，里面堆积着各种古老的法器和丹药
+    canMove: true
+    requiredItems:
+      - ancient_key
+    resourceGroups:
+      - ancient_treasures
+    monsterGroups:
+      - treasure_guardians
+
+defaultTile:
+  type: plain
+  name: 遗迹废墟
+  description: 布满裂痕的地面上散落着断壁残垣，偶尔能在废墟中发现一些有价值的物品
+  canMove: true
+  resourceGroups:
+    - common_relics
+  monsterGroups:
+    - ruin_wanderers
+  events:
+    - id: collapse
+      name: 废墟坍塌
+      description: 不稳定的建筑突然倒塌
+      trigger: random
+      chance: 0.05
+      effects:
+        damage: 15
+        moveSpeed: 0.5

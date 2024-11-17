@@ -1,0 +1,116 @@
+spirit_stone:
+  name: 灵石
+  type: material
+  rarity: common
+  description: 蕴含灵气的石头，是修仙界的通用货币
+  stackable: true
+  maxStack: 9999
+  sellPrice: 100
+
+spirit_herb:
+  name: 灵草
+  type: material
+  rarity: common
+  description: 常见的灵药，可用于炼丹
+  stackable: true
+  maxStack: 99
+  sellPrice: 30
+
+spirit_iron:
+  name: 灵铁
+  type: material
+  rarity: uncommon
+  description: 蕴含灵气的铁矿，可用于打造法器
+  stackable: true
+  maxStack: 99
+  sellPrice: 150
+
+wind_essence:
+  name: 风之精华
+  type: material
+  rarity: uncommon
+  description: 从风属性灵兽身上获得的精纯灵气
+  stackable: true
+  maxStack: 99
+  sellPrice: 120
+
+spirit_fox_fur:
+  name: 灵狐毛皮
+  type: material
+  rarity: common
+  description: 灵狐身上的毛皮，可用于制作法袍
+  stackable: true
+  maxStack: 99
+  sellPrice: 80
+
+wolf_fang:
+  name: 狼牙
+  type: material
+  rarity: uncommon
+  description: 灵狼的獠牙，可用于制作法器
+  stackable: true
+  maxStack: 99
+  sellPrice: 100
+
+spider_silk:
+  name: 蛛丝
+  type: material
+  rarity: uncommon
+  description: 洞穴蜘蛛吐出的丝线，韧性极强
+  stackable: true
+  maxStack: 99
+  sellPrice: 150
+
+spider_venom:
+  name: 蛛毒
+  type: material
+  rarity: rare
+  description: 剧毒蜘蛛的毒液，可用于炼制毒药
+  stackable: true
+  maxStack: 50
+  sellPrice: 200
+
+snake_scale:
+  name: 蛇鳞
+  type: material
+  rarity: uncommon
+  description: 岩蛇的鳞片，可用于制作护具
+  stackable: true
+  maxStack: 99
+  sellPrice: 120
+
+snake_fang:
+  name: 蛇牙
+  type: material
+  rarity: uncommon
+  description: 岩蛇的毒牙，可用于制作法器
+  stackable: true
+  maxStack: 99
+  sellPrice: 150
+
+boar_meat:
+  name: 野猪肉
+  type: material
+  rarity: common
+  description: 野猪的肉，可用于制作食物
+  stackable: true
+  maxStack: 99
+  sellPrice: 50
+
+boar_hide:
+  name: 野猪皮
+  type: material
+  rarity: common
+  description: 野猪的皮，可用于制作护具
+  stackable: true
+  maxStack: 99
+  sellPrice: 60
+
+wolf_pelt:
+  name: 狼皮
+  type: material
+  rarity: uncommon
+  description: 灰狼的皮毛，可用于制作护具
+  stackable: true
+  maxStack: 99
+  sellPrice: 100

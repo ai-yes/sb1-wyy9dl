@@ -1,0 +1,17 @@
+cloud_sect_leader:
+  name: 青云掌门
+  title: 青云门掌门
+  category: faction_leader
+  dialogue: 青云门虽为小派，但也有数百年传承。希望你能为宗门增光。
+  quests:
+    - sect_contribution
+  faction: cloud_sect
+
+spirit_valley_elder:
+  name: 谷主
+  title: 灵谷之主
+  category: faction_leader
+  dialogue: 灵谷虽小，却是难得的修炼宝地。好好珍惜这里的机缘。
+  quests:
+    - valley_exploration
+  faction: spirit_valley

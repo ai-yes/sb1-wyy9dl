@@ -1,0 +1,26 @@
+name: 无名修士
+level: 1
+exp: 0
+maxExp: 100
+hp: 100
+maxHp: 100
+mp: 50
+maxMp: 50
+stamina: 100
+maxStamina: 100
+gold: 0
+attack: 10
+defense: 5
+spirit: 8
+agility: 8
+skills:
+  - id: basic_attack
+    name: 基本剑法
+    type: attack
+    mpCost: 0
+    cooldown: 0
+    damage: 1.0
+cultivation:
+  realm: 练气期
+  stage: 1
+  progress: 0
