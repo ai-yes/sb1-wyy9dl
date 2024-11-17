@@ -6,7 +6,7 @@ gather_herbs_basic:
   status: available
   requirements:
     - type: gather
-      target: common_herb
+      target: spirit_herb
       amount: 5
       current: 0
   rewards:

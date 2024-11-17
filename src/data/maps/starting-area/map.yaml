@@ -11,7 +11,7 @@ defaultTile:
   description: 经过开垦的灵田，种植着一些常见的灵药
   canMove: true
   resourceGroups: 
-    - common_herbs
+    - spirit_herbs
   monsterGroups:
     - spirit_beasts_weak
 
@@ -57,7 +57,7 @@ tiles:
     description: 遍布各种灵药的山谷，是采药的好去处
     canMove: true
     resourceGroups:
-      - common_herbs
+      - spirit_herbs
       - rare_herbs
     monsterGroups:
       - forest_beasts
